@@ -105,6 +105,48 @@ a {
     color: #1A73E8;
 }
 
+.aboutme-d {
+    font-size: large;
+}
+
+.abouts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cpc-link {
+    color: blue;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.Professional-holder, .Journey-holder, .Values-holder {
+    padding: 10px 30px;
+    font-size: 15px;
+    margin: 20px;
+    width: 30%;
+    box-shadow: 0px 0px 5px 0px gray;
+    border-radius: 10px;
+}
+
+.Professional-holder:hover, .Journey-holder:hover, .Values-holder:hover {
+    box-shadow: 0px 0px 8px 0px gray;
+}
+
+.Professional-holder h2, .Journey-holder h2, .Values-holder h2 {
+    text-align: center;
+}
+
+.Professional-holder p, .Journey-holder p, .Values-holder p {
+    text-align: justify;
+}
+
+.abouts-3 {
+    text-align: left;
+}
+
+
 /* SERVICES HOLDER */
 
 .Services-holder {
