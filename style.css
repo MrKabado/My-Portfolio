@@ -118,7 +118,7 @@ a {
 
 .cpc-link {
     color: blue;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -150,14 +150,59 @@ a {
 
 /* SERVICES HOLDER */
 
-.Services-holder {
+.Services {
     box-shadow: 0 0 5px 0 gray;
     padding: 50px;
 }
 
-.Services-holder h1, .Services-holder h2 {
+.Services h1 {
     color: #1A73E8;
 }
+
+.Services-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.services1, .services2, .services3  {
+    padding: 10px 30px;
+    font-size: 15px;
+    margin: 20px;
+    width: 30%;
+    box-shadow: 0px 0px 5px 0px gray;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.services1 i, .services2 i, .services3 i {
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+.services1 h2, .services2 h2, .services3 h2 {
+    text-align: left;
+    color: #4070F4;
+}
+
+.services1:hover, .services2:hover, .services3:hover {
+    box-shadow: 0px 0px 8px 0px gray;
+    background-color: #4070F4;
+    transition: all 0.5s ease;
+    transform: translateY(-10px);
+    color: white;
+}
+
+.services1:hover h2, .services2:hover h2, .services3:hover h2,
+.services1:hover p, .services2:hover p, .services3:hover p {
+    color: white;
+}
+
+.services1 p, .services2 p, .services3 p {
+    text-align: justify;
+}
+
+/* CONTACT HOLDER */
 
 .Contact-holder {
     box-shadow: 0 0 5px 0 gray;
