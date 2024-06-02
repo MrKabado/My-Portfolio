@@ -283,6 +283,6 @@ a {
 .contact-submit-btn:hover {
     background-color: transparent;
     color: #1A73E8;
-    font-weight: 600;
     border-color: #1A73E8;
+    font-weight: bold;
 }

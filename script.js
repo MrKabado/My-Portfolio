@@ -13,3 +13,7 @@ function instaLink() {
 function githubLink() {
     window.open("https://github.com/MrKabado");
 }
+
+function submitted() {
+    alert("Thank you for submitting! Your inputs have been successfully received.");
+}

@@ -12,7 +12,7 @@
 </head>
 <script src="/script.js"></script>
 <body>
-    <div class="global-holder">
+    <div id="global-holder" class="global-holder">
         <header>
             <h3 class="header-title">Jerson Jay</h3>
             <nav>
@@ -90,7 +90,7 @@
 
 
             </pre>
-            <div class="Services">
+            <div id="services" class="Services">
                 <h1>My Services</h1>
                 <div class="Services-holder">
                     <div class="services1">
@@ -118,18 +118,6 @@
 
 
             </pre>
-            <!-- <div id="contact" class="Contact-holder">
-                <h1>Contact Me</h1>
-                <p>I’m always open to new opportunities, collaborations, and connections. Whether you have a project in mind, need technical support, or just want to chat about technology, feel free to reach out!</p>
-                <pre></pre>
-                <h2>Get in Touch</h2>
-                <p>Email: jersonjaybonghanoy@gmail.com <br>
-                    GitHub: github.com/MrKabado <br>
-                    Contact No.: +639915337918 <br>
-                <pre></pre>
-                <h2>Location</h2>
-                <p>Based in Lapu-Lapu City, Cebu, Philippines. Available for remote work and willing to travel for the right opportunity.</p>
-            </div> -->
             <div id="contact" class="Contact-holder">
                 <div class="contact-info">
                     <h1>CONTACT ME</h1>
@@ -163,7 +151,7 @@
                     <pre></pre>
                     <textarea id="contact-longmessage" class="contact-longmessage" name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
                     <pre></pre>
-                    <button type="submit" id="contact-submit-btn" class="contact-submit-btn">Submit</button>
+                    <button type="submit" id="contact-submit-btn" class="contact-submit-btn" onclick="submitted()" href="global-holder">Submit</button>
                 </div>
             </div>
         </main>
