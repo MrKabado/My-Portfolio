@@ -31,6 +31,7 @@ table tr td {
 a {
     text-decoration: none;
     color: black;
+    transition: all 0.5s ease;
 }
 
 .home:hover, .about:hover, .services:hover, .contacts:hover {
@@ -72,13 +73,13 @@ a {
     border-radius: 10px;
     background-color: #4070F4;
     color: white;
+    transition: all 0.5s ease;
 }
 
 .explore-btn:hover {
     border-color: #4070F4;
     background-color: transparent;
     color: #4070F4;
-    transition: 0.5s ease;
 }
 
 .image-holder {
@@ -207,8 +208,81 @@ a {
 .Contact-holder {
     box-shadow: 0 0 5px 0 gray;
     padding: 50px;
+    display: flex;
+    flex-direction: row;
 }
 
 .Contact-holder h1, .Contact-holder h2 {
     color: #1A73E8;
+}
+
+.table-p-holder tr:hover {
+    cursor: pointer;
+}
+
+.contact-info {
+    width: 40%;
+    border: 3px solid #1A73E8;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.table-icon-holder tr td {
+    font-size: 25px;
+    text-align: center;
+    width: 30px;
+    height: 50px;
+}
+
+.table-icon-holder tr td a {
+    cursor: pointer;
+    transition: font-size 0.3s ease;
+}
+
+.table-icon-holder tr td a:hover {
+    font-size: larger;
+}
+
+.contact-message {
+    padding: 20px;
+    width: 60%;
+}
+
+.contact-message input, .contact-longmessage {
+    border: 2px solid transparent;
+    box-shadow: 0 0 2px 0 gray;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+    margin: 10px 0;
+    transition: border 0.3s ease;
+}
+
+.contact-message input:hover, .contact-longmessage:hover {
+    border: 2px solid #1A73E8;
+}
+
+.contact-message input:focus, .contact-longmessage:focus {
+    outline-color: #1A73E8;
+}
+
+.contact-submit-btn {
+    width: 150px;
+    height: 40px;
+    border: 2px solid transparent;
+    background-color: #4070F4;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-submit-btn:hover {
+    background-color: transparent;
+    color: #1A73E8;
+    font-weight: 600;
+    border-color: #1A73E8;
 }
