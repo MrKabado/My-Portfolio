@@ -31,7 +31,6 @@ table tr td {
 a {
     text-decoration: none;
     color: black;
-    transition: all 0.5s ease;
 }
 
 .home:hover, .about:hover, .services:hover, .contacts:hover {
@@ -96,56 +95,84 @@ a {
 
 /* ABOUT HOLDER */
 
-
-.About-holder {
+#about {
     box-shadow: 0 0 5px 0 gray;
     padding: 50px;
+    height: 500px;
 }
 
-.About-holder h1, .About-holder h2 {
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.subtitle {
+    font-weight: 600;
     color: #1A73E8;
 }
 
-.aboutme-d {
-    font-size: large;
-    text-align: justify;
-}
-
-.abouts {
+.tab-titles {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    margin: 20px 0 20px;
 }
 
-.cpc-link {
-    color: blue;
-    font-weight: 600;
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
     cursor: pointer;
+    position: relative;
 }
 
-.Professional-holder, .Journey-holder, .Values-holder {
-    padding: 10px 30px;
-    font-size: 15px;
-    margin: 20px;
-    width: 30%;
-    box-shadow: 0px 0px 5px 0px gray;
-    border-radius: 10px;
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #1A73E8;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
 }
 
-.Professional-holder:hover, .Journey-holder:hover, .Values-holder:hover {
-    box-shadow: 0px 0px 8px 0px gray;
+.tab-links.active-link::after {
+    width: 50%;
 }
 
-.Professional-holder h2, .Journey-holder h2, .Values-holder h2 {
-    text-align: center;
-}
-
-.Professional-holder p, .Journey-holder p, .Values-holder p {
+.tab-contents p {
     text-align: justify;
 }
 
-.abouts-3 {
-    text-align: left;
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #1A73E8;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
 }
 
 
