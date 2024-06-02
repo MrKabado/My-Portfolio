@@ -149,17 +149,17 @@
                     <div class="contact-icons">
                         <table class="table-icon-holder">
                             <tr>
-                                <td><a><i class="fa-brands fa-facebook"></i></a></td>
-                                <td><a><i class="fa-brands fa-instagram"></i></a></td>
-                                <td><a><i class="fa-brands fa-github"></i></a></td>
+                                <td><a onclick="fbLink()"><i class="fa-brands fa-facebook"></i></a></td>
+                                <td><a onclick="instaLink()"><i class="fa-brands fa-instagram"></i></a></td>
+                                <td><a onclick="githubLink()"><i class="fa-brands fa-github"></i></a></td>
                             </tr>
                         </table>
                     </div>
                 </div>
                 <div class="contact-message">
-                    <input id="contact-name" class="contact-name" type="text" placeholder="Your Name">
+                    <input id="contact-name" class="contact-name" type="text" placeholder="Your Name" required>
                     <pre></pre>
-                    <input id="contact-email" class="contact-email" type="email" placeholder="Your Email">
+                    <input id="contact-email" class="contact-email" type="email" placeholder="Your Email" required>
                     <pre></pre>
                     <textarea id="contact-longmessage" class="contact-longmessage" name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
                     <pre></pre>
