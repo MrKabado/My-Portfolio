@@ -319,6 +319,7 @@ a {
 
     .profile-holder, #about, .Services, .Contact-holder {
         overflow: hidden; 
+        padding: 30px;
     }
 
     body {
@@ -334,7 +335,6 @@ a {
 
     .header-title {
         font-size: 15px;
-        color: gray;
     }
 
     nav {
@@ -358,7 +358,7 @@ a {
     /* Profile */
 
     .greetings {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .explore-btn {
@@ -372,24 +372,25 @@ a {
     /* About Part */
 
     #about {
-        height: 450px;
+        height: 600px;
     }
 
     .subtitle {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .about-col-2 p {
-        font-size: 10px;
+        font-size: 13px;
         text-align: justify;
+        width: 85%;
     }
 
     .about-col-2 ul li {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .about-col-2 ul li span {
-        font-size: 11px;
+        font-size: 13px;
     }
 
     /* Services Part */
@@ -399,7 +400,7 @@ a {
     }
 
     .Services h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .Services-holder {
@@ -418,11 +419,11 @@ a {
     .services1 h2, .services2 h2, .services3 h2,
     .services1 i, .services2 i, .services3 i
       {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .services1 p, .services2 p, .services3 p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     /* Contact Me Part */
@@ -438,16 +439,20 @@ a {
     }
 
     .Contact-holder h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .table-p-holder tr td {
-        font-size: 10px;
+        font-size: 12px;
+    }
+
+    .table-icon-holder tr td a i {
+        font-size: 25px;
     }
 
     .contact-message input, .contact-message textarea {
-        padding: 5px;
-        font-size: 10px;
+        padding: 10px;
+        font-size: 12px;
     }
 
     .contact-message {
