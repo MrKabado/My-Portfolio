@@ -314,12 +314,16 @@ a {
     font-weight: bold;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 475px) {
+
+    .profile-holder, #about, .Services, .Contact-holder {
+        border: 2px solid green;
+        overflow: hidden; 
+    }
 
     body {
         padding: 0;
         margin: 0;
-        overflow-x: hidden;
     }
 
     header {
@@ -328,7 +332,6 @@ a {
         align-items: center;
         padding: 0 20px;
         margin: 0;
-        width: 100%;
     }
 
     .header-title {
@@ -353,6 +356,8 @@ a {
     nav a {
         font-size: 14px;
     }
+
+    /* Profile */
 
     .greetings {
         font-size: 35px;

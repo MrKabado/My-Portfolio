@@ -14,9 +14,9 @@ function githubLink() {
     window.open("https://github.com/MrKabado");
 }
 
-function submitted() {
-    alert("Thank you for submitting! Your inputs have been successfully received.");
-}
+// function submitted() {
+//     alert("Thank you for submitting! Your inputs have been successfully received.");
+// }
 
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
