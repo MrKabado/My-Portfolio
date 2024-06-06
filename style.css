@@ -314,10 +314,9 @@ a {
     font-weight: bold;
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 640px) {
 
     .profile-holder, #about, .Services, .Contact-holder {
-        border: 2px solid green;
         overflow: hidden; 
     }
 
@@ -392,63 +391,21 @@ a {
 
     /* Services Part */
 
-    .Services h1 {
-        font-size: 25px;
+    .Services {
+        width: fit-content;
     }
 
     .Services-holder {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .Services-holder {
+        width: auto;
     }
 
     .services1, .services2, .services3 {
-        display: flex;
-        flex-direction: column;
-        font-size: 10px;
-        width: 40%;
-        padding: 5px;
-    }
-
-    .services1, .services2, .services3 {
-        display: flex;
-        flex-direction: column;
-        font-size: 10px;
-        width: 45%;
-        padding: 5px 10px;
-        margin: 5px;
-        box-shadow: 0px 0px 5px 0px gray;
-        border-radius: 10px;
-        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-    }
-
-    .services1 i, .services2 i, .services3 i {
-        font-size: 1.5em;
-        margin-right: 5px;
-    }
-
-    .services1 h2, .services2 h2, .services3 h2 {
-        text-align: left;
-        color: #4070F4;
-    }
-
-    .services1:hover, .services2:hover, .services3:hover {
-        box-shadow: 0px 0px 8px 0px gray;
-        background-color: #4070F4;
-        transition: all 0.5s ease;
-        transform: translateY(-10px);
-        color: white;
-    }
-
-    .services1:hover h2, .services2:hover h2, .services3:hover h2,
-    .services1:hover p, .services2:hover p, .services3:hover p {
-        color: white;
-    }
-
-    .services1 p, .services2 p, .services3 p {
-        text-align: justify;
-        font-size: 13px;
+        margin: 10% auto;
+        width: 50%;
     }
 
     /* Contact Me Part */
