@@ -314,7 +314,151 @@ a {
     font-weight: bold;
 }
 
-@media screen and (max-width: 640px) {
+
+@media screen and (max-width: 370px) {
+
+    .profile-holder, #about, .Services, .Contact-holder {
+        overflow: hidden; 
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        align-items: center;
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    .header-title {
+        font-size: 15px;
+        color: gray;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    nav table {
+        width: auto;
+        white-space: nowrap;
+    }
+
+    nav table tr td {
+        padding: 0 5px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    /* Profile */
+
+    .greetings {
+        font-size: 20px;
+    }
+
+    .explore-btn {
+        font-size: x-small;
+    }
+
+    .profile-img {
+        width: 100%;
+    }
+
+    /* About Part */
+
+    #about {
+        height: 450px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .about-col-2 p {
+        font-size: 10px;
+        text-align: justify;
+    }
+
+    .about-col-2 ul li {
+        font-size: 10px;
+    }
+
+    .about-col-2 ul li span {
+        font-size: 11px;
+    }
+
+    /* Services Part */
+
+    .Services {
+        width: fit-content;
+    }
+
+    .Services h1 {
+        font-size: 20px;
+    }
+
+    .Services-holder {
+        flex-direction: column;
+    }
+
+    .Services-holder {
+        width: auto;
+    }
+
+    .services1, .services2, .services3 {
+        margin: 10% auto;
+        width: 72%;
+    }
+
+    .services1 h2, .services2 h2, .services3 h2,
+    .services1 i, .services2 i, .services3 i
+      {
+        font-size: 15px;
+    }
+
+    .services1 p, .services2 p, .services3 p {
+        font-size: 10px;
+    }
+
+    /* Contact Me Part */
+
+    .Contact-holder {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        margin: 0 20px;
+    }
+
+    .Contact-holder h1 {
+        font-size: 20px;
+    }
+
+    .table-p-holder tr td {
+        font-size: 10px;
+    }
+
+    .contact-message input, .contact-message textarea {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .contact-message {
+        margin: auto;
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (min-width: 371px) and (max-width: 640px) {
 
     .profile-holder, #about, .Services, .Contact-holder {
         overflow: hidden; 
@@ -432,3 +576,4 @@ a {
     }
 
 }
+
