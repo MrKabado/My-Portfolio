@@ -14,9 +14,17 @@ function githubLink() {
     window.open("https://github.com/MrKabado");
 }
 
-// function submitted() {
-//     alert("Thank you for submitting! Your inputs have been successfully received.");
-// }
+function handleSubmit() {
+    let name = document.getElementById("contact-name").value;
+    let email = document.getElementById("contact-email").value;
+
+    if (name && email) {
+        document.getElementById("Loading-Text").innerHTML = 'Loading.. Please wait a minute. Thank you <i class="fa-solid fa-hands-praying"></i>';
+        setTimeout(function() {
+            document.getElementById("contact-form").submit();
+        }, 500);
+    }
+}
 
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
