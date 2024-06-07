@@ -154,12 +154,13 @@
                     </div>
                 </div>
                 <div class="contact-message">
-                    <form action="https://formsubmit.co/jersonjaybonghanoy@gmail.com" method="POST">
-                        <input id="contact-name" class="contact-name" type="text" name="Name" placeholder="Your Name" required>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="c7241433-7fbb-40a9-a922-f1fadbe02847">
+                        <input id="contact-name" class="contact-name" type="text" name="name" placeholder="Your Name" required>
                         <pre></pre>
-                        <input id="contact-email" class="contact-email" type="email" name="Email" placeholder="Your Email" required>
+                        <input id="contact-email" class="contact-email" type="email" name="email" placeholder="Your Email" required>
                         <pre></pre>
-                        <textarea id="contact-longmessage" class="contact-longmessage" name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <textarea id="contact-longmessage" class="contact-longmessage" name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
                         <pre></pre>
                         <button type="submit" id="contact-submit-btn" class="contact-submit-btn" onclick="handleSubmit()" href="global-holder">Submit</button>
                         <p id="Loading-Text"></p>
